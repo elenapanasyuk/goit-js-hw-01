@@ -21,7 +21,7 @@ const NO_DELIVERY = 'В выбранную страну доставка не д
 Индия - 80 кредитов
 Ямайка - 120 кредитов */
 
-const countryName = 'торонто';
+const countryName = 'китай';
 
 const CANCELED_BY_USER = 'Отменено пользователем!';
 const NO_DELIVERY = 'В выбранную страну доставка недоступна.';
@@ -37,16 +37,16 @@ if (countryName === null) {
 } else {
   country = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase();
   switch (country) {
-    case 'Китай':
+    case CNINA:
       price = 100;
       break;
-    case 'Австралия':
+    case AUSTRALIA:
       price = 170;
       break;
-    case 'Индия':
+    case INDIA:
       price = 80;
       break;
-    case 'Ямайка':
+    case JAMAICA:
       price = 120;
       break;
     default:
